@@ -21,19 +21,11 @@ public class Test1Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_test1);
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_test1);
         User user1 = new User("Test1", "User1");
         binding.setUser(user1);
 
-        binding.tvNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                startActivity(new Intent(Test1Activity.this, Test2Activity.class));
-            }
-        });
     }
 
 

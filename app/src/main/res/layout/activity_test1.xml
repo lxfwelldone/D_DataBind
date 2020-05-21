@@ -19,14 +19,5 @@
             android:text="@{user.lastName}"/>
 
 
-        <TextView
-            android:id="@+id/tv_next"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="20dp"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:text="跳转到列表页"
-            />
     </LinearLayout>
 </layout>
